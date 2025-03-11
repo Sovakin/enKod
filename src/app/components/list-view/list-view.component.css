@@ -1,0 +1,36 @@
+.list-view__container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.list-view__item {
+	display: flex;
+	gap: 20px;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+
+.list-view__image {
+
+	width: 100px;
+	height: 100px;
+	border-radius: 8px;
+}
+
+.list-view__content {
+	flex: 1;
+}
+
+.list-view__title {
+	font-size: 18px;
+}
+
+.list-view__description {
+	font-size: 14px;
+}
+
+.list-view__favorite {
+	padding: 5px 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<div class="list-view__container">
+	@for (city of cities; track city.id) {
+	<div class="list-view__item">
+		<img [src]="city.image" [alt]="city.name" class="list-view__image">
+		<div class="list-view__content">
+			<h2 class="list-view__title">{{ city.name }}</h2>
+			<p class="list-view__description">{{ city.description }}</p>
+			<button class="list-view__favorite" (click)="toggleFavorite.emit(city.id)">
+				{{ city.favorite ? 'Убрать из избранного' : 'Добавить в избранное' }}
+			</button>
+		</div>
+	</div>
+	}
+</div>
