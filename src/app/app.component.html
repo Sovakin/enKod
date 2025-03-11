@@ -3,13 +3,16 @@
     <h1 class="app__text__header">Список городов</h1>
   </div>
   <div class="app__controls">
-    <button class="app__button__list" (click)="toggleViewMode('list')">Список</button>
-    <button class="app__button__tile" (click)="toggleViewMode('tile')">Плитка</button>
+    <div>
+      <button class="app__button__list" (click)="toggleViewMode('list')">Список</button>
+      <button class="app__button__tile" (click)="toggleViewMode('tile')">Плитка</button>
+    </div>
+    <button class="app__button__create">Создать</button>
   </div>
   @if (viewMode === 'list') {
-  <app-list-view [cities]="cities" (toggleFavorite)="toggleFavorite($event)"></app-list-view>
+    <app-list-view [cities]="cities" (toggleFavorite)="toggleFavorite($event)"></app-list-view>
   }
   @if (viewMode === 'tile') {
-  <app-tile-view [cities]="cities" (toggleFavorite)="toggleFavorite($event)"></app-tile-view>
+    <app-tile-view [cities]="cities" (toggleFavorite)="toggleFavorite($event)"></app-tile-view>
   }
 </div>
