@@ -1,59 +1,67 @@
-# CityApp
+Задание
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+Создать веб-приложение на Angular, отображающее данные.
+Результат работы – исходники проекта в архиве либо ссылка на репозиторий.
 
-## Development server
+Результат прислать на почту: 
+hr@enkod.ru 
+с темой письма: «Тестовое задание – junior frontend-разработчик»
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+Формат данных
+• id (number)
+• image - фото города (string)
+• name - название города (string)
+• description - описание города (string)
+• favorite - состояние добавленного в избранное (boolean)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Требования
+1. У приложения есть два компонента, отвечающие за вывод данных в виде плитки и списка соответственно. Переключение между ними происходит в родительском компоненте app.
+2. У элементов есть возможность добавить в избранное, и это состояние общее, то есть не зависит от типа отображения (плитка и список).
+3. Требования к внешнему виду:
+	Верстка в соответствии с макетом. 
+	Шрифт Roboto.
+	Использовать иконки и цвета из макета.
+4. Использовать CSS Flexbox при верстке страниц. Страница должна растягиваться во весь экран. (при желании можно дополнить CSS Grid Layout)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+Плюсом будет
+1. Использовать именование классов по методологии БЭМ.
+2. Кроссбраузерность.
+3. Ввести возможность добавить новые данные.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Ссылка на макет задания: 
+https://www.figma.com/file/5eklzRSGfECfGdJ67TeDUF/enKod-%E2%80%93-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%3A-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8E-Fronted-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA?node-id=1%3A14
 
-```bash
-ng generate --help
-```
 
-## Building
+Данные:
 
-To build the project run:
+Москва
+Столица России, город федерального значения
+https://screenshots.enkod.tech/ilya_novikovG6KIVEp3v160xCMY.png
 
-```bash
-ng build
-```
+Санкт-Петербург
+Второй по численности населения город России
+https://screenshots.enkod.tech/ilya_novikovW7s6gLwAGDjaJbNL.png
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Новосибирск
+Третий по численности населения город России
+https://screenshots.enkod.tech/ilya_novikovHyQpb3vrjFvTfzJJ.png
 
-## Running unit tests
+Екатеринбург
+Город-миллионник в России. Тоже красивый город
+https://screenshots.enkod.tech/ilya_novikovvUvY8ocQ8yIQg6Gi.png
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Нижний Новгород
+Город в центральной России. Красивый город.
+https://screenshots.enkod.tech/ilya_novikovHWEuBOtzexaZ3VQs.png
 
-```bash
-ng test
-```
+Челябинск
+Город в Российской Федерации, седьмой по количеству жителей
+https://screenshots.enkod.tech/ilya_novikovvjgSDr7xZl6A2UmH.png
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Казань
+Город в России, столица Республики Татарстан.
+https://screenshots.enkod.tech/ilya_novikovc2dbr7KvIJ2dknlZ.png
