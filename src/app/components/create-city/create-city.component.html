@@ -1,0 +1,25 @@
+<div class="create-container">
+  <div class="header">
+    <button class="back-button" (click)="goBack()">← Назад</button>
+    <h2>Создание города</h2>
+  </div>
+
+  <form (ngSubmit)="onSubmit()" class="form">
+    <div class="form-group">
+      <label>Название города</label>
+      <input type="text" [(ngModel)]="newCity.name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Описание города</label>
+      <textarea [(ngModel)]="newCity.description" name="description" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Ссылка на картинку</label>
+      <input type="url" [(ngModel)]="newCity.image" name="image" required>
+    </div>
+
+    <button type="submit" class="create-button">Создать</button>
+  </form>
+</div>
