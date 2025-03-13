@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { TileViewComponent } from './components/tile-view/tile-view.component';
-import { ListViewComponent } from './components/list-view/list-view.component';
+import { routes } from './app.routes';
 
 @NgModule({
-	declarations: [
-		AppComponent,
-		TileViewComponent,
-		ListViewComponent
-	],
-	imports: [
-		BrowserModule
-	],
-	providers: [],
-	bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,7 +7,7 @@
       <button class="app__button__list" (click)="toggleViewMode('list')">Список</button>
       <button class="app__button__tile" (click)="toggleViewMode('tile')">Плитка</button>
     </div>
-    <button class="app__button__create">Создать</button>
+    <button class="app__button__create" (click)="navigateToCreate()">Создать</button>
   </div>
   @if (viewMode === 'list') {
     <app-list-view [cities]="cities" (toggleFavorite)="toggleFavorite($event)"></app-list-view>

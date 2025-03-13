@@ -18,6 +18,9 @@ export class CityService {
   getCities(): City[] {
     return this.cities;
   }
+  addCity(city: City): void {
+    this.cities.push(city);
+  }
 
   toggleFavorite(cityId: number): void {
     const city = this.cities.find(c => c.id === cityId);
