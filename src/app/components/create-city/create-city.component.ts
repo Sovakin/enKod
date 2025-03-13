@@ -20,19 +20,21 @@ export class CreateCityComponent {
   };
 
   constructor(
-      private cityService: CityService,
-      private router: Router
+    private cityService: CityService,
+    private router: Router
   ) {}
 
   onSubmit() {
-    const city: City = {
-      ...this.newCity,
-      id: this.generateId(),
-      favorite: false
-    } as City;
+    if (this.newCity.name && this.newCity.description && this.newCity.image) {
+      const city: City = {
+        ...this.newCity,
+        id: this.generateId(),
+        favorite: false
+      } as City;
 
-    this.cityService.addCity(city);
-    this.router.navigate(['/']);
+      this.cityService.addCity(city);
+      this.router.navigate(['/']);
+    }
   }
 
   goBack() {
@@ -40,6 +42,6 @@ export class CreateCityComponent {
   }
 
   private generateId(): number {
-    return Math.floor(Math.random() * 1000000);
+    return Date.now() + Math.floor(Math.random() * 1000);
   }
 }

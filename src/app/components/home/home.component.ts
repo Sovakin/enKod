@@ -15,12 +15,16 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   cities: City[] = [];
-  viewMode: 'tile' | 'list' = 'tile';
+  viewMode: 'list' | 'tile' = 'list';
 
   constructor(
     private cityService: CityService,
     private router: Router
   ) {
+    this.loadCities();
+  }
+
+  private loadCities(): void {
     this.cities = this.cityService.getCities();
   }
 
@@ -30,9 +34,10 @@ export class HomeComponent {
 
   toggleFavorite(cityId: number): void {
     this.cityService.toggleFavorite(cityId);
+    this.loadCities();
   }
 
-  navigateToCreate() {
+  navigateToCreate(): void {
     this.router.navigate(['/create']);
   }
 }

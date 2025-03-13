@@ -22,7 +22,7 @@
 .app__controls {
   padding: 36px 60px 0 60px;
   display: flex;
-  justify-content: space-between; /* Распределяем элементы по краям */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -71,5 +71,5 @@
 }
 
 .app__button__create:hover {
-  background-color: #1A8AA0; /* Более тёмный оттенок при наведении */
+  background-color: #1A8AA0;
 }

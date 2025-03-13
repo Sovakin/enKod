@@ -1,9 +1,9 @@
 .tile-view__container {
   display: flex;
-  flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+  flex-wrap: wrap;
   gap: 20px 16px;
   padding: 16px 0 0 60px;
-  max-width: 100%; /* Ограничиваем ширину контейнера */
+  max-width: 100%;
 }
 
 .tile-view__item:hover {
@@ -11,17 +11,17 @@
 }
 
 .tile-view__item {
-  width: 320px; /* Фиксированная ширина 320px, без растяжки */
-  height: 300px; /* Фиксированная высота 300px */
-  background: #F2F5FA; /* Белый фон */
-  border-radius: 8px; /* Закруглённые углы */
-  overflow: hidden; /* Скрываем переполнение */
+  width: 320px;
+  height: 300px;
+  background: #F2F5FA;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .tile-view__image {
-  width: 320px; /* Изображение на всю ширину карточки */
-  height: 188px; /* Фиксированная высота изображения */
-  object-fit: cover; /* Изображение обрезается, сохраняя пропорции */
+  width: 320px;
+  height: 188px;
+  object-fit: cover;
 }
 
 .tile-view__content {
@@ -31,26 +31,26 @@
 
 .tile-view__title {
   margin: 0;
-  color: #434652; /* Цвет заголовка, как в списке */
+  color: #434652;
   font-weight: bold;
-  font-size: 16px; /* Размер шрифта, как в списке */
+  font-size: 16px;
 }
 
 .tile-view__description {
-  margin-top: 8px; /* Отступ сверху для описания */
-  color: #757986; /* Цвет текста, как в списке */
-  font-size: 14px; /* Размер шрифта, как в списке */
+  margin-top: 8px;
+  color: #757986;
+  font-size: 14px;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Ограничение на 2 строки */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis; /* Многоточие, если текст обрезается */
+  text-overflow: ellipsis;
 }
 
 .city-header {
   display: flex;
   align-items: center;
-  gap: 14px; /* Отступ между названием и иконкой */
+  gap: 14px;
 }
 
 .favorite-icon {
